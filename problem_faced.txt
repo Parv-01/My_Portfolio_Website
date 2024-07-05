@@ -1,0 +1,12 @@
+Problem 1 :-
+First initiliased node using :-  npm initi -y
+Then downloaded all the libraries i want 
+
+Then used git to upload version system over the github but faced the problem of uploading node_modules also 
+Then tried to add node_modules/ in .gitignore but as we already committed and make it in stage area we didnt get the required output 
+
+HEnce we used git rm -r --cached node_modules to delete and make this query unstage and then push to  the main branch which make it a local folder not online one 
+
+Problem 2 :-
+
+
