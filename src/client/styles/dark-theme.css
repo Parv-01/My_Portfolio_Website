@@ -1,0 +1,64 @@
+/* Reset default browser styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222; /* Dark background */
+    color: #ddd; /* Light gray text color */
+}
+
+/* Header styles */
+header {
+    background-color: #333; /* Dark gray background */
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* White shadow for contrast */
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #ddd; /* Light gray header text color */
+}
+
+/* Navigation menu styles */
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #bbb; /* Light gray link color */
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff; /* White link color on hover */
+}
+
+/* Main content styles */
+main {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #444; /* Darker background color */
+    color: #ccc; /* Light gray text color */
+}
