@@ -6,6 +6,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/', // Ensure correct path resolution
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
@@ -29,7 +30,10 @@ module.exports = {
     }),
   ],
   devServer: {
-    contentBase: './dist',
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
     hot: true,
+    historyApiFallback: true, // Redirect 404s to index.html
   },
 };

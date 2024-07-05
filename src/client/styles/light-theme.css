@@ -1,35 +1,18 @@
-/* Reset some default browser styles */
-body, html {
+/* styles/light-theme.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
 }
 
-/* Page layout styles */
-#root {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Header styles */
 header {
-    background-color: #f0f0f0;
-    padding: 10px 0;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    margin: 0;
-    font-size: 28px;
-    color: #333;
-}
-
-/* Navigation menu styles */
-nav {
-    text-align: center;
-    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 nav ul {
@@ -38,32 +21,41 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;
-    margin-right: 15px;
+    display: inline;
+    margin-right: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #666;
-    font-size: 16px;
-    transition: color 0.3s ease;
+    color: #333;
 }
 
 nav ul li a:hover {
-    color: #000;
+    color: #666;
 }
 
-/* Main content styles */
 main {
-    margin-top: 20px;
-    line-height: 1.6;
+    padding: 20px;
 }
 
-/* Footer styles */
 footer {
     text-align: center;
-    margin-top: 50px;
-    padding: 10px 0;
     background-color: #333;
     color: #fff;
+    padding: 10px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
